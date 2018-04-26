@@ -1,0 +1,7 @@
+HISTORY OF JAVA WEB SERVLET and JavaServer Pages (JSP)
+•	Java is built naturally with internet functionality. In June 1997, Sun Microsystems announced the Java Servlet.
+	Java Servlet is one of the fundamental foundation in developing different components of a Java Web which runs 
+  in a single process by using grain threads.
+•	While in 1998, Sun released the JavaServer Pages (JSP).
+	JSP is used to easily code a dynamic HTML pages.
+•	Both Servlets and JSPs lets the programmers build or develop a portable, easy to maintain, modular and scalable Web applications.
