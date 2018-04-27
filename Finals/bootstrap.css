@@ -1,0 +1,76 @@
+body{
+  background-color: white;
+  font-family: 'Open Sans';
+  color: black;
+}
+.main{
+background: url(../images/background.jpg) no-repeat center center; 
+background-size: cover;
+opacity: 0.9;
+height: 700px;
+width: 500px center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+padding, margin: 0px;
+}
+.nav-pills{ 
+  font-size:2vw;
+  background-color: white;
+  position: sticky;
+  color: black;
+  margin: 0px;
+  padding: 0px;
+}
+.jambotron{
+  background-color:black;
+  opacity: 0.6;
+  padding: 10px;
+  width: 50%;
+  margin-right:auto;
+  margin-left: auto;
+  border-radius: 5px;
+  margin-top: +160px;
+  float: left;
+}
+h1{
+  padding:0%;
+  margin-top:0px;
+  font-size:4.0em;
+  color: white;
+}
+
+h3 {
+ color: white;
+ font-size: 1.3em;
+}
+
+.Overview{
+height: 100%;
+width: 100% center no-repeat;
+padding: 2%;
+color: black;
+
+}
+
+p{
+  font-size: 1.5em;
+  padding: 2%;
+}
+
+
+.Syllabus{
+background-color: #BCBCC3;
+padding: 2%;
+color: black;
+}
+
+.footer{
+  background-color: gray;
+}
+
+.footer p{
+  font-size:15px;
+}
+
