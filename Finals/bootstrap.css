@@ -4,7 +4,6 @@ body{
   color: black;
 }
 .main{
-background: url(../images/background.jpg) no-repeat center center; 
 background-size: cover;
 opacity: 0.9;
 height: 700px;
@@ -22,17 +21,6 @@ padding, margin: 0px;
   color: black;
   margin: 0px;
   padding: 0px;
-}
-.jambotron{
-  background-color:black;
-  opacity: 0.6;
-  padding: 10px;
-  width: 50%;
-  margin-right:auto;
-  margin-left: auto;
-  border-radius: 5px;
-  margin-top: +160px;
-  float: left;
 }
 h1{
   padding:0%;
@@ -61,9 +49,8 @@ p{
 
 
 .Syllabus{
-background-color: #BCBCC3;
-padding: 2%;
-color: black;
+background-color: black;
+color: white;
 }
 
 .footer{
