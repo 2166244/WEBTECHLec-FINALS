@@ -1,0 +1,15 @@
+
+.row-inner1{
+	color: rgba(0,0,0,0.55);
+	background-color: #f6f6f6;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	height: 48px;
+	padding: 15px 16px;
+}
+.row-outer{
+	height: 284px;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+.row-inner2{
+	padding: 160px 32px 40px 32px !important;
+}
