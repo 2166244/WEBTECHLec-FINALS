@@ -1,0 +1,37 @@
+body {
+    background-color: #f5f5f5;
+
+}
+.withBorder{
+	border: 1px solid rgba(0,0,0,0.1);
+}
+.row-inner1{
+	color: rgba(0,0,0,0.55);
+	background-color: #f6f6f6;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	height: 48px;
+	padding: 15px 16px;
+}
+.icon2 img{
+	width: 22px;
+	height: 22px;
+	position: relative;
+	left: -4px;
+}
+.col-md-12 h1{
+	font-size: 20px;
+	padding-bottom: 4px;
+	font-family: 'OpenSans-Light', Arial, sans-serif;
+	font-weight: 100;
+	line-height: 24px;
+	color: #5b5656;
+}
+.font1{
+	font-size: 14px;
+    line-height: 21px;
+}
+.c1 {
+	cursor: pointer; 
+	cursor: hand;
+	color: #2972d1;
+}
