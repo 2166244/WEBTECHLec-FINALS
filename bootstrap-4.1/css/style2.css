@@ -55,7 +55,7 @@ a, a:hover, a:focus {
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
+    background: #046677;
     color: #fff;
     transition: all 0.3s;
 }
@@ -66,7 +66,7 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #183c42;
 }
 
 #sidebar ul.components {
@@ -83,15 +83,21 @@ a, a:hover, a:focus {
     padding: 10px;
     font-size: 1.1em;
     display: block;
+    background: #046677;
+    color: #fff;
+    border-left: 8px solid #183c42;
+
 }
 #sidebar ul li a:hover {
     color: #7386D5;
     background: #fff;
+    
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
+    background: #046677;
     color: #fff;
-    background: #6d7fcc;
+    border-left: 8px solid #183c42;
 }
 
 
@@ -150,6 +156,7 @@ a.article, a.article:hover {
     position: absolute;
     top: 0;
     right: 0;
+    background: #ffffff;
 }
 #content.active {
     width: 100%;
@@ -175,4 +182,78 @@ a.article, a.article:hover {
     #sidebarCollapse span {
         display: none;
     }
+}
+
+/* ---------------------------------------------------
+    QUIZ
+----------------------------------------------------- */
+.quiz{
+    padding: 50px;
+}
+.quiz p:first-child{
+    line-height: 0px;
+    font-size: 20px;
+    color: #020202;
+}
+.quiz #high{
+    font-size: 35px;
+    color: #020202;
+}
+.quiz h1{
+    font-size: 200px;
+}
+.quiz .obj{
+    font-weight: 600;
+    color: #020202;
+    font-size: 18px;
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+.quiz .obj > span{
+    font-weight: 300;
+    color: #020202;
+    font-size: 18px;
+    padding-left: 50px;
+}
+.quiz-body { 
+    margin-top:20px; 
+    padding-bottom:50px; 
+}
+.option-block-container { 
+    margin-top:20px; 
+    max-width:420px; 
+}
+.option-block { 
+    padding:10px; 
+    background:aliceblue; 
+    border:2px solid #84c5fe; 
+    margin-bottom:10px; 
+    cursor:pointer; 
+}
+.result-question { 
+    font-weight:bold; 
+}
+.c-wrong { 
+    margin-left:20px; 
+    color:#FF0000; 
+}
+.c-correct {  
+    margin-left:20px; 
+    color:green; 
+}
+.last-row { 
+    border-bottom:1px solid #ccc; 
+    padding-bottom:25px; 
+    margin-bottom:25px; 
+}
+.res-header { 
+    border-bottom:1px solid #ccc;
+    margin-bottom:15px; 
+    padding-bottom:15px; 
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #5cb85c;
 }
