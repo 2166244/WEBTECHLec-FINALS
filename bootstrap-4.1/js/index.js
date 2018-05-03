@@ -4,14 +4,13 @@
 var quiz = { "JS" : [
 	{
 		"id" : 1,
-		"question" : "This declaration is needed to be defined for a document to be a HTML.",
+		"question" : "Server-side scripting is a technique used in web development which involves employing scripts on a web server which produce a response customized for each user's  request to the website.",
 		"options" : [
-			{"a": "&lt;!DOCTYPE html&gt;", 
-			 "b":"&lt;html&gt;",
-			 "c":"&lt;head&gt;", 
-			 "d":"&lt;!DOCTYPE&gt;"}
+			{"a": " TRUE", 
+			 "b": " FALSE",
+			}
 			],
-		"answer":"&lt;<!DOCTYPE html&gt;",
+		"answer":"TRUE",
 		"score":0,
 		"status": ""
 	},
