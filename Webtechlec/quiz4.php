@@ -76,7 +76,6 @@
                     <div class="row mt-3">
                         <div class="col-md-12 withBorder p-0">
                             <div class="quiz">
-                                <p>QUIZ: Server Side Scripting</p>
                                 	<div class="row">
                                         <div class="col-sm-12">
                                             <div id="result" class="quiz-body">
@@ -113,7 +112,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!-- jQuery Custom Scroller CDN -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-         <script  src="js/index.js"></script>
+         <script  src="js/quiz4.js"></script>
         <script type="text/javascript">
             $(document).ready(function () {
                 $("#sidebar").mCustomScrollbar({

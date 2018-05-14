@@ -1,0 +1,116 @@
+
+	[
+	  {
+	    "title": "JavaServer Pages (JSP)",
+	    "description1": "Introduction",
+	    "description2": "- Developing, building, and creating content of a website is the JSP",
+	    "description3": "- It is a combination of HTML and XML, and integrates different applications of Java. ",
+	    "description4": "- Java code is attached into an HTML pages which is also an essential way of writing servlets.",
+	    "imageurl": "images/jsp1.jpg"
+	  },
+	  {
+	    "title": "JSP Syntax",
+        "description1": "1. Hidden Comments - Standard format in writing a comment using the JSP notation: <%--This is a JSP notation comment--%>",
+        "description2": "2. Comments - Using the HTML comment format, JSP comment format, scripting element comment attach to it",
+	    "description3": "3. Output comments - Standard format in writing an HTML comment: <-How to write an HTML comment-->",
+        "description4": "4. JSP Syntactic elements",
+	    "imageurl": "images/jsp3.jpg"
+	  },
+	  {
+	    "title": "JSP Directives",
+	    "description1": "By using the Directives, which describes the attributes within the page, it also gives a supplement information in JSP container which is only available in Tag Files.",
+        "description2": "",
+        "description3": "",
+	    "description4": "",
+	    "imageurl": "images/jsp2.jpg"
+	  },
+      {
+	    "title": "JSP Declarations",
+	    "description1": "Used in JSP as a new declare member of data and function which is the result of the class generated in servlet throughout the page translation. JSP can be written in two approaches:",
+        "description2": "",
+        "description3": "",
+	    "description4": "",
+	    "imageurl": "images/jsp5.jpg"
+	  },
+      {
+	    "title": "JSP Expressions",
+	    "description1": "",
+        "description2": "",
+        "description3": "",
+	    "description4": "",
+	    "imageurl": "images/jsp6.jpg"
+	  },
+      {
+	    "title": "JSP Scriptlets",
+	    "description1": "Throughout the process of time request, scriplets are being executed during that process. The output relies on the scriptlet code within the output stream. A sample scriplet format is shown below:",
+        "description2": "",
+        "description3": "",
+	    "description4": "",
+	    "imageurl": "images/jsp7.jpg"
+	  },
+      {
+	    "title": "Error Handling",
+	    "description1": "By the use of JSP container as way of the JSP source to be translated into a servlet class, errors may probably happen or occur during this phase such as the following:",
+        "description2": "- Before the client request in the JSP, the JSP was already utilized within the JSP container",
+        "description3": "- If the JSP is requested by the client.",
+	    "description4": "",
+	    "imageurl": ""
+	  },
+      {
+	    "title": "JSP Configuration",
+	    "description1": "- Changes in web.xml",
+        "description2": "- Jsp-config element",
+        "description3": "gives the information on global configuration among the JSP files that are within a Web application. There composed a two sub-elements of the jsp-config element:",
+	    "description4": "",
+	    "imageurl": "images/jsp8.jpg"
+	  },
+      {
+	    "title": "Implicit Objects",
+	    "description1": "",
+        "description2": "",
+        "description3": "",
+	    "description4": "",
+	    "imageurl": "images/jsp9.jpg"
+	  },
+      {
+	    "title": "Object Scopes",
+	    "description1": "Scope refers on different entities that can be obtain by different objects respectively. Any of the following scopes can identify an object such as the following: ",
+        "description2": "",
+        "description3": "",
+	    "description4": "",
+	    "imageurl": "images/jsp10.jpg"
+	  },
+      {
+	    "title": "Expression Language",
+	    "description1": "An expression language is usually used when assigning values to element attributes. It belongs to the specification of the first version of Java Standard Tag Library (JSTL), yet by now it belongs to the second version of JSP specification.",
+        "description2": "1. Implicit objects, EL basics",
+        "description3": "EL expressions support several implicit objects. The table below shows and describes different Implicit Objects.",
+	    "description4": "",
+	    "imageurl": "images/jsp11.jpg"
+	  },
+      {
+	    "title": "Syntax of Expression Language",
+	    "description1": "",
+        "description2": "",
+        "description3": "",
+	    "description4": "",
+	    "imageurl": "images/jsp12.jpg"
+	  },
+      {
+	    "title": "Actions",
+	    "description1": "Compared to declarations, scriplets, and expressions, Actions provides more functionality and also independent when it comes to scripting language.",
+        "description2": "Actions can be categorized into three standards such as the following:",
+        "description3": "1. By using the JavaBeans components and by controlling the runtime forwarding or including",
+	    "description4": "2. By preparing HTML for the Java plugin",
+	    "imageurl": ""
+	  },
+      {
+	    "title": "Tag Files",
+	    "description1": "- Basic Tags",
+        "description2": "There are two possible locations where you can place basic tags for them to be recognize by the JSP container.",
+        "description3": "",
+	    "description4": "",
+	    "imageurl": "images/jsp13.jpg"
+	  }
+	]
+

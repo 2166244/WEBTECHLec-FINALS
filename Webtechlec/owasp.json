@@ -1,0 +1,84 @@
+
+	[
+	  {
+	    "title": "A1 : INJECTION",
+	    "description1": "- Injection defects like the NoSQL, Operating System, LDAP, and SQL happens when untrusted information is set to a syntax or query.",
+	    "description2": "Mitigation or How to Avoid:",
+	    "description3": "- To utilize API safeties that keeps away from the utilization of the mediator totally or gives an interface those is parameterized or then again move to utilize Object Relational Mapping (ORM) Tools.",
+	    "description4": "- Use positive or ‘whitelist’ server-side info approval. It is not a total barrier the same numbers of utilizations require uncommon characters for example content places or portable applications in API.",
+	    "imageurl": "images/owasp1.jpg"
+	  },
+      {
+	    "title": "A2 : BROKEN AUTHENTICATION",
+	    "description1": "- Application capacities identified with validation and session administration are regularly executed mistakenly, enabling aggressors to bargain passwords, session tokens, or abusing other usage imperfections to expect other clients’ personalities incidentally or permanently. ",
+        "description2": "Mitigation or How to Avoid:",
+        "description3": "- Where conceivable, actualize multi-factor confirmation to avoid computerized, qualification stuffing, brute power, and stolen certification reuse attacks.",
+	    "description4": "- Implement feeble secret word checks, for example, testing new or passwords that was changed against the rundown of the main 10000 most noticeably bad passwords. ",
+	    "imageurl": "images/owasp2.jpg"
+	  },
+      {
+	    "title": "A3 : Sensitive Data Exposure",
+	    "description1": "- Web applications today has enable various technologies that are available over the web.Most of today’s technology involves our day to day activities. Either when it comes to banking, shopping, and every activity that we associate with our lives. In line with the said activities, we would want to be secure at all times with doing every activity with the use of the available technologies in the web.",
+        "description2": "Mitigations or How to avoid",
+        "description3": "- Classify data and information by their respective organized category whether processed or stored must be kept secured by abiding by the policies stated by any privacy laws, business, or organizations.",
+	    "description4": "- Use security technologies governing the web such as TLS (Transport Layer Security) and ciphering techniques as well. Enforce using this techniques which will lessen security breaches in your application and try to go with directives such ash HTTP Strict Transport Security.",
+	    "imageurl": "images/owasp3.jpg"
+	  },
+      {
+	    "title": "A4 : XML EXTERNAL ENTITIES (XXE)",
+	    "description1": "- Numerous has established or arranged XMP processors assess outside elements can be utilized to unveil inner documents utilizing the record URI handler, interior record shares, remote code execution, internal port checking, and denial of administration assaults.",
+        "description2": "Mitigation or How to Avoid:",
+        "description3": "- Classify information handled, put away, or transmitted by an application. Recognize which information is delicate as indicated by protection laws, administrative necessities, or business needs. ",
+	    "description4": "- Don't store delicate information superfluously. Dispose of it when conceivable or utilize PCI DSS consistent tokenization or even truncation. Information that isn't held can't be stolen. ",
+	    "imageurl": "images/owasp4.jpg"
+	  },
+      {
+	    "title": "A5 : BROKEN ACCESS CONTROL",
+	    "description1": "- Restrictions on what validated clients are permitted to do are regularly not legitimately authorized. Attackers can abuse these flaws to get to unapproved usefulness or potentially information for example, get to other clients’ records, see touchy documents, alter other clients’ information and change rights.",
+        "description2": "Mitigation or How to Avoid:",
+        "description3": "- Model access controls ought to implement record proprietorship, rather than tolerating that the client can make, read, refresh, or erase any record. Unique application business confine prerequisites ought to be implemented by space models. ",
+	    "description4": "- Implement get to control systems once and re-utilize them through the application, including limiting CORS utilization. ",
+	    "imageurl": "images/owasp5.jpg"
+	  },
+      {
+	    "title": "A6 : Security Misconfiguration",
+	    "description1": "- Security misconfiguration can occur at any level of an application stack, including the system associations, arrange, web server, application server, database, structures, custom code, and pre-displayed virtual machines, compartments, or farthest point.  Automated scanners are valuable for identifying misconfigurations, utilization of default records or designs, unnecessary administrations, legacy alternatives, and so on. ",
+        "description2": "Mitigation or How to Avoid:",
+        "description3": "- A repeatable solidifying process that makes it fast and easy to send another condition that is suitably secured. Change, QA, and creation situations should all be orchestrated with different accreditations used as a piece of each condition. This methodology should be computerized to restrain the effort required to setup another ensured condition. ",
+	    "description4": "- Undertaking to audit and refresh the setups reasonable to all security notes, refreshes and fixes as a part of the fix organization process. ",
+	    "imageurl": "images/owasp6.jpg"
+	  },
+      {
+	    "title": "A7 : CROSS-SITE SCRIPTING (XSS)",
+	    "description1": "- XSS flaws happen at whatever point an application incorporates untrusted information in another page without appropriate approval or getting away, or updates a current site with client provided information utilizing a program API that can make HTML or JavaScript.",
+        "description2": "Mitigation or How to Avoid:",
+        "description3": "- Utilizing structures that naturally escaping the XSS by outline, for example, the most recent React JS and Ruby on Rails. Take in the impediments of every structure's XSS insurance and suitably handle the utilization cases which are not secured. ",
+	    "description4": "- Escaping the unknown HTTP ask for information in light of the setting in the Hypertext Markup Language yield will be resolving the Reflected and Stored XSS vulnerabilities. ",
+	    "imageurl": "images/owasp7.jpg"
+	  },
+      {
+	    "title": "A8: INSECURE DESERIALIZATION",
+	    "description1": "- Unreliable deserialization frequently prompts remote code execution. Regardless of whether deserialization flaws don’t bring about execution of remote code, it can be used to perform an assault which includes a replay attacks, infusion attacks, and benefit escalation attacks.",
+        "description2": "Mitigation or How to Avoid:",
+        "description3": "- Actualizing uprightness checks, for example, computerized marks on any serialized items to avoid unfriendly question creation or information altering. ",
+	    "description4": "- Enforcing strict write limitations amid deserialization previously question creation as the code regularly expects a quantifiable arrangement of classes. Detours to this procedure have been illustrated, so dependence exclusively on this isn't fitting. ",
+	    "imageurl": "images/owasp8.jpg"
+	  },
+      {
+	    "title": "A9 : COMPONENTS WITH KNOWN VULNERABILITIES",
+	    "description1": "- Examples like libraries, structures, and other programming modules, keep running with indistinguishable benefits from the application. If the vulnerability of the component is misused, like the attack can encourage genuine information misfortune or takeover of a server.",
+        "description2": "Mitigation or How to Avoid:",
+        "description3": "- Remove unused conditions, superfluous highlights, segments, records, and documentation. ",
+	    "description4": "- Persistently screen resources such as the CVE and NVD for vulnerability in the segments. Utilize programming piece investigation devices to robotize the procedure. Buy in to email cautions for security vulnerabilities identified with segments you utilize. ",
+	    "imageurl": "images/owasp9.jpg"
+	  },
+      {
+	    "title": "A10: INSUFFICIENT LOGGING & MONITORING",
+	    "description1": "- Inadequate logging and checking combined with absent or insufficient coordination with episode reaction, enables assailants to additionally assault frameworks, look after determination, turn to more frameworks, and alter, extricate, or crush information.",
+        "description2": "Mitigation or How to Avoid:",
+        "description3": "- Ensure all login, get to control disappointments, and server-side info approval disappointments can be logged with adequate client setting to distinguish suspicious or pernicious records, and held for adequate time to permit deferred legal investigation.",
+	    "description4": "- Ensure high-esteem exchanges have a review trail with trustworthiness controls to counteract altering or cancellation, for example, add as it were database tables or comparable. ",
+	    "imageurl": "images/owasp10.jpg"
+	  }
+	]
+

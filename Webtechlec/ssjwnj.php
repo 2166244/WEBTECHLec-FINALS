@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>Collapsible sidebar using Bootstrap 3</title>
+        <title>Course Quiz</title>
 
         <!-- Bootstrap CSS CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -27,7 +27,7 @@
                     <h3>Course Quiz</h3>
                 </div>
 
-                 <ul class="list-unstyled components">
+                <ul class="list-unstyled components">
                     <!-- <li class="active">
                         <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false">WWW</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu1">
@@ -76,26 +76,12 @@
                     <div class="row mt-3">
                         <div class="col-md-12 withBorder p-0">
                             <div class="quiz">
-                                <p>QUIZ: Server Side Scripting</p>
-                                	<div class="row">
-                                        <div class="col-sm-12">
-                                            <div id="result" class="quiz-body">
-                                            <form name="quizForm" onSubmit="">
-                                                <fieldset class="form-group">
-                                                <h4><span id="qid">1.</span> <span id="question"></span></h4>
-
-                                                <div class="option-block-container" id="question-options">
-
-                                                 </div> <!-- End of option block -->
-                                                 </fieldset>
-                                                 <button  name="previous" id="previous" class="btn btn-success">Previous</button>
-                                                 &nbsp;
-                                                 <button  name="next" id="next" class="btn btn-success">Next</button>
-                                           </form>
-                                           </div>
-                                        </div> <!-- End of col-sm-12 -->
-
-                                    </div> <!-- End of row -->
+                                <p>QUIZ</p>
+                                <h1 id="high">INTRODUCTION</h1>
+                                <p>10 QUESTIONS</p>
+                                <div class="obj">Objective: <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </span></div>
+                                <button type="button" class="btn btn-primary"><a href="quiz3.php">Start</a></button>
+                                
                             </div>
                         </div>
                     </div>
@@ -113,7 +99,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!-- jQuery Custom Scroller CDN -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-         <script  src="js/index.js"></script>
+
         <script type="text/javascript">
             $(document).ready(function () {
                 $("#sidebar").mCustomScrollbar({

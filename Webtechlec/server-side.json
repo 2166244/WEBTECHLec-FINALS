@@ -1,0 +1,49 @@
+
+	[
+	  {
+	    "title": "Active Server Pages",
+	    "description1": "Introduction",
+	    "description2": "• development structure or framework for creating websites.",
+	    "description3": "•developed in the mid 90's, version 1.0",
+	    "description4": "History",
+	    "imageurl": "images/historyssws.png"
+	  },
+	  {
+	    "title": "Concept",
+	    "description1": "",
+	    "description2": "Perl – It is a high-level general-purpose programming language that is being utilized especially for enhancing web applications",
+	    "description3": "C++ - General-purpose object-oriented programming language which was developed by Bjarne Stroustrup and also an extended version of the C language.",
+	    "description4": "VBScript, C#, PHP",
+	    "imageurl": "images/flssws.PNG"
+          
+
+	  },
+	  {
+	    "title": "Sample Codes",
+	    "description1": "ASP.NET Core app  - console app that makes a web server in its Main Method",
+	    "description2": "",
+	    "description3": "",
+	    "description4": "",
+	    "imageurl": "images/samplecode1.PNG"
+
+	  },
+        {
+	    "title": "Common Gateway Interface",
+	    "description1": "ASP.NET Core app  - console app that makes a web server in its Main Method",
+	    "description2": "History",
+	    "description3": "In the year 1993 – National Center for Supercomputing Applications (NCSA)  have written the specification for calling command line executables",
+	    "description4": "In the year November 1997 – Work group administered by Ken Coar; Version 1.1 (RFC 3875)",
+	    "imageurl": "images/h2.PNG"
+
+	  },
+         {
+	    "title": "Ruby on Rails",
+	    "description1": "Server-side internet application structure written in Ruby ",
+	    "description2": "Model-view-controller (MVC) framework ",
+	    "description3": "In the year 1993 – National Center for Supercomputing Applications (NCSA)  have written the specification for calling command line executables",
+	    "description4": "In the year November 1997 – Work group administered by Ken Coar; Version 1.1 (RFC 3875)",
+	    "imageurl": "images/h2.PNG"
+
+	  }
+	]
+

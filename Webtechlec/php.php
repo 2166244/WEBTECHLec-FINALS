@@ -27,19 +27,19 @@
                     <h3>Course Notes</h3>
                 </div>
 
-                <ul class="list-unstyled components">
+              <ul class="list-unstyled components" type="radio">
                     <li class="active">
-                        <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false">Server-Side Web Scripting Technologies</a>
+                        <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false"> Other Server-Side Web Scripting Technologies</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu1">
-                            <li><a href="#">Introduction</a></li>
-                            <li><a href="#">Terminologies</a></li>
-                            <li><a href="#">Summary</a></li>
+                            <li><a href="server-side.php">Introduction</a></li>
+                            <li><a href="">Terminologies</a></li>
+                            <li><a href="">Summary</a></li>
                         </ul>
                     </li>
                     <li class="active">
                         <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false">PHP</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu2">
-                            <li><a href="#">Introduction</a></li>
+                            <li><a href="php.php">Introduction</a></li>
                             <li><a href="#">Terminologies</a></li>
                             <li><a href="#">Summary</a></li>
                         </ul>
@@ -47,7 +47,7 @@
                     <li class="active">
                         <a href="#homeSubmenu3" data-toggle="collapse" aria-expanded="false">Server-Side Javascript With Node JS</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu3">
-                            <li><a href="#">Introduction</a></li>
+                            <li><a href="server-side-nodejs.php">Introduction</a></li>
                             <li><a href="#">Terminologies</a></li>
                             <li><a href="#">Summary</a></li>
                         </ul>
@@ -55,12 +55,20 @@
                     <li class="active">
                         <a href="#homeSubmenu4" data-toggle="collapse" aria-expanded="false">Java Web Servlet and JSP</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu4">
-                            <li><a href="#">Introduction</a></li>
+                            <li><a href="servletjsp.php">Introduction</a></li>
                             <li><a href="#">Terminologies</a></li>
                             <li><a href="#">Summary</a></li>
                         </ul>
                     </li>
-                    
+                    <li class="active">
+                        <a href="#homeSubmenu5" data-toggle="collapse" aria-expanded="false">OWASP Top 10: Web Security</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu5">
+                            <li><a href="owasp.php">Introduction</a></li>
+                            <li><a href="#">Terminologies</a></li>
+                            <li><a href="#">Summary</a></li>
+                        </ul>
+                    </li>
+
                 </ul>
 
             </nav>
@@ -83,16 +91,38 @@
 
             <!-- Course content here... -->
                 <div class="container ">
+                <?php
+                    $url = 'php.json';
+                    $data = file_get_contents($url);
+                    $courses = json_decode($data);
+                    $counter = 1;
+                ?>
+                <?php foreach ($courses as $course) : ?>
+                    <?php
+                    $title = $course->title;
+                    $description1 = $course->description1;
+                    $description2 = $course->description2;
+                    $description3 = $course->description3;
+                    $description4 = $course->description4;
+                    $imageurl = $course->imageurl;
+                    ?>
                     <div class="row mt-3">
-                        <div class="col-md-12 withBorder p-0">
+                        <div class="col-md-12 withBorder pt-3">
                             <div class="quiz">
-                                <p>Course Content</p>
-                                
-                                
+                                <h1><?php echo strtoupper($title); ?></h1>
+                                <p><?php echo $description1; ?></p>
+                                <p><?php echo $description2; ?></p>
+                                <p><?php echo $description3; ?></p>
+                                <p><?php echo $description4; ?></p>
+                                <img src="<?php echo $imageurl; ?>">
                             </div>
                         </div>
                     </div>
+    
+                    <br>
+                <?php $counter++; endforeach; ?>
                 </div>
+
             </div>
         </div>
 

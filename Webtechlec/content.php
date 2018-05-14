@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>Collapsible sidebar using Bootstrap 3</title>
+        <title>Course Notes</title>
 
         <!-- Bootstrap CSS CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -24,33 +24,43 @@
             <!-- Sidebar Holder -->
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <h3>Course Quiz</h3>
+                    <h3>Course Notes</h3>
                 </div>
 
-                 <ul class="list-unstyled components">
-                    <!-- <li class="active">
-                        <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false">WWW</a>
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false">Server-Side Web Scripting Technologies</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu1">
                             <li><a href="#">Introduction</a></li>
                             <li><a href="#">Terminologies</a></li>
                             <li><a href="#">Summary</a></li>
                         </ul>
-                    </li> -->
-                    <li>
-                        <a href="sswst.php">Server-Side Web Scripting Technologies</a>
                     </li>
-                    <li>
-                        <a href="phpquiz.php">PHP</a>
+                    <li class="active">
+                        <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false">PHP</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu2">
+                            <li><a href="#">Introduction</a></li>
+                            <li><a href="#">Terminologies</a></li>
+                            <li><a href="#">Summary</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="ssjwnj.php">Server-Side Javascript With Node JS</a>
+                    <li class="active">
+                        <a href="#homeSubmenu3" data-toggle="collapse" aria-expanded="false">Server-Side Javascript With Node JS</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu3">
+                            <li><a href="#">Introduction</a></li>
+                            <li><a href="#">Terminologies</a></li>
+                            <li><a href="#">Summary</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="sjspquiz.php">Java Web Servlet and JSP</a>
+                    <li class="active">
+                        <a href="#homeSubmenu4" data-toggle="collapse" aria-expanded="false">Java Web Servlet and JSP</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu4">
+                            <li><a href="#">Introduction</a></li>
+                            <li><a href="#">Terminologies</a></li>
+                            <li><a href="#">Summary</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="owaspquiz.php">OWASP Top 10: Web Security</a>
-                    </li>
+
                 </ul>
 
             </nav>
@@ -64,42 +74,47 @@
                         <div class="navbar-header">
                             <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
                                 <i class="glyphicon glyphicon-align-left"></i>
-                                <span>Open Quiz</span>
+                                <span>Open Notes</span>
                             </button>
                         </div>
 
                     </div>
                 </nav>
 
-            <!-- Quiz content here... -->
+            <!-- Course content here... -->
                 <div class="container ">
+                <?php
+                    $url = 'data.json';
+                    $data = file_get_contents($url);
+                    $courses = json_decode($data);
+                    $counter = 1;
+                ?>
+                <?php foreach ($courses as $course) : ?>
+                    <?php
+                    $title = $course->title;
+                    $description1 = $course->description1;
+                    $description2 = $course->description2;
+                    $description3 = $course->description3;
+                    $description4 = $course->description4;
+                    $imageurl = $course->imageurl;
+                    ?>
                     <div class="row mt-3">
-                        <div class="col-md-12 withBorder p-0">
+                        <div class="col-md-12 withBorder pt-3">
                             <div class="quiz">
-                                <p>QUIZ: Server Side Scripting</p>
-                                	<div class="row">
-                                        <div class="col-sm-12">
-                                            <div id="result" class="quiz-body">
-                                            <form name="quizForm" onSubmit="">
-                                                <fieldset class="form-group">
-                                                <h4><span id="qid">1.</span> <span id="question"></span></h4>
-
-                                                <div class="option-block-container" id="question-options">
-
-                                                 </div> <!-- End of option block -->
-                                                 </fieldset>
-                                                 <button  name="previous" id="previous" class="btn btn-success">Previous</button>
-                                                 &nbsp;
-                                                 <button  name="next" id="next" class="btn btn-success">Next</button>
-                                           </form>
-                                           </div>
-                                        </div> <!-- End of col-sm-12 -->
-
-                                    </div> <!-- End of row -->
+                                <h1><?php echo strtoupper($title); ?></h1>
+                                <p><?php echo $description1; ?></p>
+                                <p><?php echo $description2; ?></p>
+                                <p><?php echo $description3; ?></p>
+                                <p><?php echo $description4; ?></p>
+                                <img src="<?php echo $imageurl; ?>">
                             </div>
                         </div>
                     </div>
+    
+                    <br>
+                <?php $counter++; endforeach; ?>
                 </div>
+
             </div>
         </div>
 
@@ -113,7 +128,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!-- jQuery Custom Scroller CDN -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-         <script  src="js/index.js"></script>
+
         <script type="text/javascript">
             $(document).ready(function () {
                 $("#sidebar").mCustomScrollbar({
